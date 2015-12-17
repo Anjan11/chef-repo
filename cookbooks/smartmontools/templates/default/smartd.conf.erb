@@ -1,0 +1,9 @@
+<% if node['smartmontools']['devices'].length > 0 -%>
+<%   node['smartmontools']['devices'].each do |device| -%>
+<%=    "/dev/#{device} #{node['smartmontools']['device_opts']}" %>
+<%   end -%>
+<% else -%>
+
+
+DEVICESCAN -m root -M exec /usr/share/smartmontools/smartd-runner
+<% end -%>

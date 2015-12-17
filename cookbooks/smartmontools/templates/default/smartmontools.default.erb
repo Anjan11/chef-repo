@@ -1,0 +1,15 @@
+
+start_smartd=<%= node['smartmontools']['start_smartd'] %>
+
+
+<% if node['smartmontools']['smartd_opts'].length > 0 -%>
+smartd_opts="<%= node['smartmontools']['smartd_opts'] %>"
+<% else -%>
+
+
+
+smartd_opts="--interval=1800"
+
+
+
+<% end -%>
