@@ -1,6 +1,6 @@
 name             'mysql'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Anjan'
+maintainer_email 'anjan.nagilla@yahoo.com'
 license          'All rights reserved'
 description      'Installs/Configures mysql'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
